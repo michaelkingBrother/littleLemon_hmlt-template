@@ -1,0 +1,184 @@
+:root {
+    --backgroundColor: #edefee;
+    --fontFamily: 'Markazi Text', sans-serif;
+    --mainColor: #f4ce14;
+    --subColor: #495e57;
+    --subBackgroundColor: #f4e5d6;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+body{
+    background-color: var(--backgroundColor);
+    font-family: var(--fontFamily);
+    margin: 3rem 5%;
+    cursor: url(img/logo-icon.png), pointer;
+}
+
+/* ht - end reset css  */
+article {
+    border-radius: 20px;
+}
+header > img {
+    display: block;
+    margin: 0 auto;
+    max-width: 90%;
+}
+
+nav {
+    display: block;
+    text-align: right;
+}
+
+nav ul{
+    text-align: center;
+    background-color: var(--subColor) ;
+    border-radius: 20px;
+    display: inline-block;
+    line-height: 2.5rem;
+    
+    font-size:  1.5rem;
+    font-weight: 800;
+    text-align: end;
+}
+
+nav li{
+    border-radius: 20px;
+    padding: 0.5rem 0.5rem;
+    display: inline-block;
+    border-radius: 20px;
+    color: wheat;
+
+}
+nav a {
+    color: unset;
+    text-decoration: none;
+}
+
+nav li:hover, .active{
+    background-color: var(--mainColor);
+    color: var(--subColor);
+}
+/* ht - end navbar  */
+
+article {
+    margin: 1rem 0;
+    padding: 1rem 1rem;
+    background-color: var(--subBackgroundColor);
+}
+.banel-header_content {
+    background-image: url(https://swall.teahub.io/photos/small/331-3315544_wallpaper-delicious-food-meat-potato-oil-meat.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-weight: 600;
+    font-style: italic;
+    padding: 1rem 2rem;
+}
+
+h1 {
+    font-size: 3rem;
+    line-height: 4rem;
+    margin: 2rem 0;
+}
+.banel-header_content p{
+    line-height: 1.5rem;
+    margin: 1rem 0;
+}
+
+.top-articles_content {
+    gap: 1rem;
+}
+
+article:hover {
+    background-color: var(--subColor);
+    color: wheat;
+}
+
+
+section, footer{
+    display: flex;
+}
+article, footer div{
+    flex: 1;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+.news {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+    margin: 3rem 0;
+}
+
+.new-article article{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: auto auto; 
+    grid-gap: 10px;
+    padding: 1rem 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.new-article img {
+    grid-row: span 2;
+    max-width: 50%;
+    align-self: center;
+    justify-self: center;
+}
+
+.new-article h3, 
+.new-article p {
+    grid-column: span 2;
+    align-self: center;
+}
+
+/* ht - end main content  */
+
+siderbar form {
+    font-weight: 800;
+    line-height: 3rem;
+    margin-bottom: 3rem;
+}
+
+siderbar button {
+    margin: 0 auto;
+    background-color: red;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+#form-get-email {
+    border: 2px solid red;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#form-get-email > * {
+    flex: 1;
+}
+
+siderbar img {
+    max-width: 100%;
+}
+/* ht - end siderbar  */
+
+footer img {
+    max-width: 20%;
+}
+
+footer p {
+    text-align: end;
+    border-top: 2px solid red;
+    font-weight: 400;
+    font-style: italic;
+}
+/* ht - end footer  */
